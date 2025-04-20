@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 const Resume = () => {
     return (
       <motion.section
-      id="sobremi"
+      id="cv"
       className="bg-white py-16 px-6 md:px-24"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}

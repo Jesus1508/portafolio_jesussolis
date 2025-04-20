@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+    @apply bg-slate-50 text-slate-600 font-sans antialiased;
+  }
+  
+  h1, h2, h3 {
+    @apply text-slate-800 font-bold;
+  }

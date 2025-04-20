@@ -1,9 +1,9 @@
 const ProjectCard = ({ title, description, tech, repo, demo }) => {
     return (
-      <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between">
+      <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
         <div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
-          <p className="text-gray-600 mb-4">{description}</p>
+          <h3 className="text-xl text-blue-700 font-semibold">{title}</h3>
+          <p className="text-sm mt-2 text-slate-600">{description}</p>
           <div className="flex flex-wrap gap-2 mb-4">
             {tech.map((t, index) => (
               <span
@@ -19,14 +19,14 @@ const ProjectCard = ({ title, description, tech, repo, demo }) => {
           <a
             href={repo}
             target="_blank"
-            className="text-blue-600 font-semibold hover:underline"
+            className="text-orange-500 hover:underline"
           >
             Repositorio
           </a>
           <a
             href={demo}
             target="_blank"
-            className="text-green-600 font-semibold hover:underline"
+            className="text-orange-500 hover:underline"
           >
             Demo
           </a>
