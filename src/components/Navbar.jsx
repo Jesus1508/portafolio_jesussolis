@@ -7,6 +7,7 @@ const Navbar = () => {
   const links = [
     { label: "Inicio", to: "inicio" },
     { label: "Sobre mí", to: "acercade" },
+    { label: "Habilidades", to: "habilidades" },
     { label: "Proyectos", to: "proyectos" },
     { label: "CV", to: "cv" },
     { label: "Contacto", to: "contacto" },
