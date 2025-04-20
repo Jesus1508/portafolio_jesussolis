@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
+import Certificates from "./pages/Certificates";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Certificates/>
       <Resume />
       <Contact />
     </>

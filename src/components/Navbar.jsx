@@ -9,6 +9,7 @@ const Navbar = () => {
     { label: "Sobre mí", to: "acercade" },
     { label: "Habilidades", to: "habilidades" },
     { label: "Proyectos", to: "proyectos" },
+    { label: "Certificados", to: "certificaciones" },
     { label: "CV", to: "cv" },
     { label: "Contacto", to: "contacto" },
   ];
