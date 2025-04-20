@@ -1,25 +1,69 @@
 import { motion } from "framer-motion";
+import {
+    FaHtml5,
+    FaCss3Alt,
+    FaJs,
+    FaVuejs,
+    FaReact,
+    FaAngular,
+    FaPhp,
+    FaLaravel,
+    FaNodeJs,
+    FaJava,
+    FaPython,
+    FaDatabase,
+    FaGitAlt,
+    FaJenkins,
+    FaWordpress,
+    FaFigma,
+  } from "react-icons/fa";
 
 const skillsData = [
   {
     title: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "Vue.js", "React", "Angular", "Bootstrap", "Figma"],
+    items: [
+      { name: "HTML", icon: <FaHtml5 /> },
+      { name: "CSS", icon: <FaCss3Alt /> },
+      { name: "JavaScript", icon: <FaJs /> },
+      { name: "Vue.js", icon: <FaVuejs /> },
+      { name: "React", icon: <FaReact /> },
+      { name: "Angular", icon: <FaAngular /> },
+      { name: "Figma", icon: <FaFigma /> },
+    ],
   },
   {
     title: "Backend",
-    items: ["PHP", "Laravel", "Node.js", "Java", "Symfony", "C#", "Python"],
+    items: [
+      { name: "PHP", icon: <FaPhp /> },
+      { name: "Laravel", icon: <FaLaravel /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Java", icon: <FaJava /> },
+      { name: "Python", icon: <FaPython /> },
+    ],
   },
   {
     title: "Bases de Datos",
-    items: ["MySQL", "SQL Server", "MongoDB"],
+    items: [
+      { name: "MySQL", icon: <FaDatabase /> },
+      { name: "SQL Server", icon: <FaDatabase /> },
+      { name: "MongoDB", icon: <FaDatabase /> },
+    ],
   },
   {
     title: "Dev Tools",
-    items: ["Git", "Jenkins", "Postman", "Jest", "WordPress"],
+    items: [
+      { name: "Git", icon: <FaGitAlt /> },
+      { name: "Jenkins", icon: <FaJenkins /> },
+      { name: "WordPress", icon: <FaWordpress /> },
+    ],
   },
   {
     title: "Metodologías",
-    items: ["SCRUM", "Principios SOLID", "UI/UX"],
+    items: [
+      { name: "SCRUM" },
+      { name: "Principios SOLID" },
+      { name: "UI/UX" },
+    ],
   },
 ];
 
@@ -48,14 +92,15 @@ const Skills = () => {
             >
               <h3 className="text-xl font-semibold text-blue-700 mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
-                {category.items.map((skill, i) => (
-                  <span
+              {category.items.map((skill, i) => (
+                <span
                     key={i}
-                    className="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                    className="flex items-center gap-2 bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-full"
+                >
+                    {skill.icon && <span className="text-blue-300">{skill.icon}</span>}
+                    {skill.name}
+                </span>
+              ))}
               </div>
             </div>
           ))}
