@@ -41,7 +41,7 @@ const About = () => {
           {/* Imagen */}
           <div className="flex-1 text-center">
             <img
-              src="/src/assets/profile.jpg"
+              src="/profile.jpg"
               alt="Foto de Carmen"
               className="rounded-full mx-auto w-48 h-48 object-cover border-4 border-orange-400 shadow-md"
             />
