@@ -25,7 +25,7 @@ const About = () => {
               Me apasiona crear productos robustos con buenas prácticas y tecnologías modernas. Tengo experiencia trabajando con <strong>Laravel, Vue.js, React, Angular, Node.js, SQL Server</strong> y más, tanto en frontend como backend.
             </p>
             <p className="text-slate-600 mb-4 text-lg">
-              He colaborado con empresas como <strong>Previ Innovación y Gestión</strong>, <strong>OTISA S.A. de C.V.</strong>, <strong>CONABIO</strong> y <strong>Fundación Nemi A.C.</strong>.
+              He colaborado con empresas como <strong>Previ Innovación y Gestión</strong>, <strong>OTISA S.A.</strong>, <strong>CONABIO</strong> y <strong>Fundación Nemi A.C.</strong>.
             </p>
 
             <a

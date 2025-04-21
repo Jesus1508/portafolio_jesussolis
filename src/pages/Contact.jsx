@@ -61,12 +61,13 @@ const Contact = () => {
             required
             className="p-3 border border-slate-300 rounded focus:outline-blue-500"
           ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+          <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
           >
             Enviar mensaje
-          </button>
+          </motion.button>
         </form>
 
         {messageSent && (
