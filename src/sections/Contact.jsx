@@ -10,7 +10,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_8vxmq3a", "template_8xg37m6", form.current, "eZ9RAwE1gQaSuw_2a")
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
           setMessageSent(true);
@@ -25,17 +30,17 @@ const Contact = () => {
   return (
     <motion.section
       id="contacto"
-      className="bg-slate-50 py-20 px-6 md:px-24"
+      className="bg-slate-50 dark:bg-slate-900 py-20 px-6 md:px-24 transition-colors"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8 text-center">
-        <h2 className="text-3xl font-bold text-blue-700 border-b-4 border-orange-400 inline-block mb-6">
+      <div className="max-w-3xl mx-auto bg-white dark:bg-slate-800 rounded-lg shadow-md p-8 text-center">
+        <h2 className="text-3xl font-bold text-blue-700 dark:text-blue-400 border-b-4 border-orange-400 inline-block mb-6">
           Contáctame
         </h2>
-        <p className="text-lg text-slate-600 mb-8">
+        <p className="text-lg text-slate-600 dark:text-slate-300 mb-8">
           ¿Tienes un proyecto en mente o deseas colaborar? Envíame un mensaje.
         </p>
 
@@ -45,21 +50,21 @@ const Contact = () => {
             name="from_name"
             placeholder="Tu nombre"
             required
-            className="p-3 border border-slate-300 rounded focus:outline-blue-500"
+            className="p-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-100 rounded focus:outline-blue-500"
           />
           <input
             type="email"
             name="from_email"
             placeholder="Tu correo electrónico"
             required
-            className="p-3 border border-slate-300 rounded focus:outline-blue-500"
+            className="p-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-100 rounded focus:outline-blue-500"
           />
           <textarea
             name="message"
             placeholder="Tu mensaje"
             rows="5"
             required
-            className="p-3 border border-slate-300 rounded focus:outline-blue-500"
+            className="p-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-100 rounded focus:outline-blue-500"
           ></textarea>
           <motion.button
               whileHover={{ scale: 1.05 }}
