@@ -28,12 +28,13 @@ const projects = [
   },
   {
     id: 4,
-    title: "Dashboard React + C#",
+    title: "Sistema de Gestión para Escuelas de Taekwondo",
     description:
-      "Panel de monitoreo de datos en tiempo real utilizando React y .NET con SQL Server. Incluye gráficas, filtros y exportación de reportes.",
-    tech: ["React", "C#", "SQL Server"],
-    repo: "https://github.com/Jesus1508/dashboard-react-csharp",
-    demo: null,
+      "Plataforma multi-sucursal para administrar alumnos, instructores, asistencias, graduaciones y pagos, con dashboard de estadísticas. Backend con Node.js, Express y MongoDB; frontend con React y Tailwind. Prueba la demo del dashboard con datos de ejemplo.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Recharts", "JWT"],
+    repo: "https://github.com/JesusDevSolis/mdk_frontend",
+    repoBackend: "https://github.com/JesusDevSolis/mdk_backend",
+    demo: "dashboard",
   },
 ];
 

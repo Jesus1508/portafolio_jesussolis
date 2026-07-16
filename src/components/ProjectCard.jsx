@@ -1,14 +1,17 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Modal from "./Modal";
-import KanbanDemo from "./demos/KanbanDemo";
-import RagChatDemo from "./demos/RagChatDemo";
+
+const KanbanDemo = lazy(() => import("./demos/KanbanDemo"));
+const RagChatDemo = lazy(() => import("./demos/RagChatDemo"));
+const TaekwondoDashboardDemo = lazy(() => import("./demos/TaekwondoDashboardDemo"));
 
 const demoComponents = {
   kanban: KanbanDemo,
   rag: RagChatDemo,
+  dashboard: TaekwondoDashboardDemo,
 };
 
-const ProjectCard = ({ title, description, tech, repo, demo }) => {
+const ProjectCard = ({ title, description, tech, repo, repoBackend, demo }) => {
   const [showDemo, setShowDemo] = useState(false);
   const DemoComponent = demo ? demoComponents[demo] : null;
 
@@ -30,14 +33,26 @@ const ProjectCard = ({ title, description, tech, repo, demo }) => {
       </div>
       <div className="flex justify-between items-center mt-6 text-sm font-medium">
         {repo ? (
-          <a
-            href={repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-orange-500 hover:underline"
-          >
-            Repositorio
-          </a>
+          <span className="flex gap-3">
+            <a
+              href={repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-500 hover:underline"
+            >
+              {repoBackend ? "Frontend" : "Repositorio"}
+            </a>
+            {repoBackend && (
+              <a
+                href={repoBackend}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-500 hover:underline"
+              >
+                Backend
+              </a>
+            )}
+          </span>
         ) : (
           <span />
         )}
@@ -53,7 +68,9 @@ const ProjectCard = ({ title, description, tech, repo, demo }) => {
 
       {DemoComponent && (
         <Modal isOpen={showDemo} onClose={() => setShowDemo(false)} title={title}>
-          <DemoComponent />
+          <Suspense fallback={<p className="text-sm text-slate-500 dark:text-slate-400">Cargando demo…</p>}>
+            <DemoComponent />
+          </Suspense>
         </Modal>
       )}
     </div>
