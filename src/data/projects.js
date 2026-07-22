@@ -5,7 +5,7 @@ const projects = [
     description:
       "Tablero Kanban interactivo con drag & drop, inspirado en el gestor de tareas ágiles que desarrollé con Vue.js, Node.js y MongoDB en proyectos anteriores. Prueba la demo funcional hecha en React.",
     tech: ["React", "Drag & Drop", "Vue.js", "Node.js", "MongoDB"],
-    repo: "https://github.com/Jesus1508/proyecto-kanban",
+    repo: "https://github.com/Jesus1508/gestor_tareas",
     demo: "kanban",
   },
   {
