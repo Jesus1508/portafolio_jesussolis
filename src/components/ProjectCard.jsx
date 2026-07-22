@@ -4,11 +4,13 @@ import Modal from "./Modal";
 const KanbanDemo = lazy(() => import("./demos/KanbanDemo"));
 const RagChatDemo = lazy(() => import("./demos/RagChatDemo"));
 const TaekwondoDashboardDemo = lazy(() => import("./demos/TaekwondoDashboardDemo"));
+const FamilyStoreDemo = lazy(() => import("./demos/FamilyStoreDemo"));
 
 const demoComponents = {
   kanban: KanbanDemo,
   rag: RagChatDemo,
   dashboard: TaekwondoDashboardDemo,
+  familystore: FamilyStoreDemo,
 };
 
 const ProjectCard = ({ title, description, tech, repo, repoBackend, demo }) => {
