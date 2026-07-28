@@ -5,12 +5,14 @@ const KanbanDemo = lazy(() => import("./demos/KanbanDemo"));
 const RagChatDemo = lazy(() => import("./demos/RagChatDemo"));
 const TaekwondoDashboardDemo = lazy(() => import("./demos/TaekwondoDashboardDemo"));
 const FamilyStoreDemo = lazy(() => import("./demos/FamilyStoreDemo"));
+const RealtimeChatDemo = lazy(() => import("./demos/RealtimeChatDemo"));
 
 const demoComponents = {
   kanban: KanbanDemo,
   rag: RagChatDemo,
   dashboard: TaekwondoDashboardDemo,
   familystore: FamilyStoreDemo,
+  chat: RealtimeChatDemo,
 };
 
 const ProjectCard = ({ title, description, tech, repo, repoBackend, demo }) => {

@@ -37,6 +37,15 @@ const projects = [
     repoBackend: "https://github.com/Jesus1508/the-family-store-backend",
     demo: "familystore",
   },
+  {
+    id: 5,
+    title: "Chat de Soporte en Tiempo Real",
+    description:
+      "Panel de soporte omnicanal (web, Telegram, WhatsApp) con mensajería en tiempo real, inspirado en el sistema de integración conversacional que desarrollé en Previ SRL con Laravel, WebSockets y Redis. Backend con Laravel Reverb y cola en Redis; frontend con Vue 3 e Inertia. Prueba la demo simulando un mensaje entrante.",
+    tech: ["Laravel", "Reverb", "WebSockets", "Redis", "Vue.js", "Inertia"],
+    repo: "https://github.com/Jesus1508/Laravel_Reverb",
+    demo: "chat",
+  },
 ];
 
 export default projects;
