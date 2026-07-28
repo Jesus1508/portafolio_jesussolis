@@ -2,6 +2,18 @@ import { motion } from "framer-motion";
 import skillsData from "../data/skills";
 import skillIcons from "../components/icons/skillIcons";
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.1 },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
+
 const Skills = () => {
   return (
     <motion.section
@@ -19,11 +31,18 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           {skillsData.map((category, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-6 hover:shadow-lg transition"
+              variants={cardVariants}
+              className="bg-white dark:bg-slate-800 shadow-md rounded-lg p-6 hover:shadow-lg hover:-translate-y-1 transition-all"
             >
               <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
@@ -32,7 +51,7 @@ const Skills = () => {
                 return (
                   <span
                       key={i}
-                      className="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm px-3 py-1 rounded-full"
+                      className="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm px-3 py-1 rounded-full hover:bg-blue-100 dark:hover:bg-slate-600 transition-colors"
                   >
                       {Icon && <span className="text-blue-400 dark:text-blue-300"><Icon /></span>}
                       {skill.name}
@@ -40,9 +59,9 @@ const Skills = () => {
                 );
               })}
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );

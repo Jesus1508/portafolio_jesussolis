@@ -1,27 +1,56 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import useTypewriter from "../hooks/useTypewriter";
 
 const stack = ["React", "Angular", "Vue.js", "Node.js", "Laravel", "Python", "IA / RAG"];
 
+const roles = [
+  "Fullstack Developer",
+  "Integrador de IA / RAG",
+  "Arquitecto de soluciones web",
+];
+
 const Home = () => {
+  const rolActual = useTypewriter(roles);
+
   return (
     <motion.section
       id="inicio"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 px-4 transition-colors"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 px-4 transition-colors overflow-hidden"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <div className="text-center max-w-3xl">
+      <motion.div
+        className="pointer-events-none absolute -top-20 -left-20 w-80 h-80 rounded-full bg-blue-400/30 dark:bg-blue-500/20 blur-3xl"
+        animate={{ x: [0, 40, 0], y: [0, 30, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        className="pointer-events-none absolute top-40 right-0 w-72 h-72 rounded-full bg-orange-300/30 dark:bg-orange-400/10 blur-3xl"
+        animate={{ x: [0, -30, 0], y: [0, 40, 0] }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+      />
+      <motion.div
+        className="pointer-events-none absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-blue-300/20 dark:bg-blue-400/10 blur-3xl"
+        animate={{ x: [0, 25, 0], y: [0, -20, 0] }}
+        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <div className="relative text-center max-w-3xl">
         <p className="text-orange-500 font-semibold tracking-wide uppercase text-sm mb-3">
           Fullstack Developer · Freelance
         </p>
         <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-200 bg-clip-text text-transparent">
           Hola, soy Jesús Solís Martínez
         </h1>
-        <p className="mt-4 text-lg text-slate-500 dark:text-slate-400">
-          Desarrollador FullStack con más de 8 años de experiencia creando soluciones web modernas y escalables, con especialización reciente en asistentes de IA conversacional.
+        <p className="mt-4 text-xl text-slate-600 dark:text-slate-300 font-medium h-8">
+          {rolActual}
+          <span className="animate-pulse">|</span>
+        </p>
+        <p className="mt-2 text-lg text-slate-500 dark:text-slate-400">
+          Más de 8 años de experiencia creando soluciones web modernas y escalables, con especialización reciente en asistentes de IA conversacional.
         </p>
 
         <div className="flex flex-wrap justify-center gap-2 mt-6">

@@ -7,6 +7,11 @@ const projects = [
     tech: ["React", "Drag & Drop", "Vue.js", "Node.js", "MongoDB"],
     repo: "https://github.com/Jesus1508/gestor_tareas",
     demo: "kanban",
+    architecture: `flowchart LR
+  U["Usuario"] --> FE["Frontend Vue 3 + Pinia"]
+  FE -- "REST + JWT" --> API["Backend Node.js / Express"]
+  API --> DB[("MongoDB")]
+  API -- "reordenamiento fraccional" --> FE`,
   },
   {
     id: 2,
@@ -16,6 +21,14 @@ const projects = [
     tech: ["React", "Node.js", "Express", "Ollama", "RAG"],
     repo: "https://github.com/Jesus1508/RAG_Assistant",
     demo: "rag",
+    architecture: `flowchart LR
+  U["Usuario"] --> FE["Frontend React"]
+  FE --> API["Backend Node.js / Express"]
+  API --> EMB["Ollama: embeddings"]
+  API --> GEN["Ollama: generación"]
+  EMB --> VS[("vectorstore.json\\n(similitud coseno)")]
+  VS --> API
+  GEN --> API`,
   },
   {
     id: 3,
@@ -26,6 +39,11 @@ const projects = [
     repo: "https://github.com/JesusDevSolis/mdk_frontend",
     repoBackend: "https://github.com/JesusDevSolis/mdk_backend",
     demo: "dashboard",
+    architecture: `flowchart LR
+  U["Usuario"] --> FE["Frontend React + Tailwind + Recharts"]
+  FE -- "REST + JWT" --> API["Backend Node.js / Express"]
+  API --> DB[("MongoDB\\nalumnos, pagos, asistencias")]
+  API -- "estadísticas" --> FE`,
   },
   {
     id: 4,
@@ -36,6 +54,12 @@ const projects = [
     repo: "https://github.com/Jesus1508/the-family-store-frontend",
     repoBackend: "https://github.com/Jesus1508/the-family-store-backend",
     demo: "familystore",
+    architecture: `flowchart LR
+  U["Usuario"] --> FE["Frontend React + Tailwind"]
+  FE -- "REST + JWT" --> API["Backend Node.js / Express"]
+  API --> DB[("MongoDB\\nproductos, pedidos, reseñas")]
+  API --> CLD["Cloudinary\\n(imágenes)"]
+  API -- "reserva de stock" --> FE`,
   },
   {
     id: 5,
@@ -45,6 +69,12 @@ const projects = [
     tech: ["Laravel", "Reverb", "WebSockets", "Redis", "Vue.js", "Inertia"],
     repo: "https://github.com/Jesus1508/Laravel_Reverb",
     demo: "chat",
+    architecture: `flowchart LR
+  CH["Telegram / WhatsApp / Web"] -- "webhook" --> API["Backend Laravel"]
+  API -- "cola" --> REDIS[("Redis")]
+  REDIS --> REV["Laravel Reverb\\n(WebSockets)"]
+  REV -- "broadcast" --> FE["Frontend Vue 3 + Inertia"]
+  U["Agente de soporte"] --> FE`,
   },
   {
     id: 6,
@@ -54,6 +84,10 @@ const projects = [
     tech: ["Angular", "Node.js", "Express", "MySQL", "Tailwind", "JWT"],
     repo: "https://github.com/Jesus1508/panel_administrativo",
     demo: "cms",
+    architecture: `flowchart LR
+  U["Usuario / Editor"] --> FE["Frontend Angular"]
+  FE -- "REST + JWT" --> API["Backend Node.js / Express + Sequelize"]
+  API --> DB[("MySQL\\npáginas, noticias, recursos")]`,
   },
 ];
 

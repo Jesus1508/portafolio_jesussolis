@@ -7,10 +7,13 @@ import Contact from "./sections/Contact";
 import Resume from "./sections/Resume";
 import Skills from "./sections/Skills";
 import Certificates from "./sections/Certificates";
+import ChatWidget from "./components/ChatWidget";
+import ScrollProgressBar from "./components/ScrollProgressBar";
 
 function App() {
   return (
     <div className="dark:bg-slate-900 transition-colors">
+      <ScrollProgressBar />
       <Navbar />
       <Home />
       <About />
@@ -20,6 +23,7 @@ function App() {
       <Certificates/>
       <Resume />
       <Contact />
+      <ChatWidget />
     </div>
   );
 }
