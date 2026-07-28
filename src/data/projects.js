@@ -12,9 +12,9 @@ const projects = [
     id: 2,
     title: "RAG Assistant",
     description:
-      "Asistente conversacional con Retrieval-Augmented Generation, basado en el sistema que integré en Aseguratec con React, Node.js, Angular y Cohere/OpenAI. Esta demo simula la búsqueda semántica y muestra las fuentes recuperadas.",
-    tech: ["React", "RAG", "OpenAI", "Cohere", "LangChain"],
-    repo: null,
+      "Asistente conversacional con Retrieval-Augmented Generation, inspirado en el sistema que integré en Aseguratec con React, Node.js, Angular y Cohere/OpenAI. Esta versión corre 100% en local con Ollama (embeddings y generación), sin depender de ninguna API de pago. Backend con Node.js y Express; frontend con React y Tailwind. Prueba la demo simulando la búsqueda semántica y las fuentes recuperadas.",
+    tech: ["React", "Node.js", "Express", "Ollama", "RAG"],
+    repo: "https://github.com/Jesus1508/RAG_Assistant",
     demo: "rag",
   },
   {

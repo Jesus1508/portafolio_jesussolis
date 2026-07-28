@@ -5,32 +5,38 @@ const knowledgeBase = [
   {
     keywords: ["rag", "retrieval", "que es rag", "qué es rag"],
     answer:
-      "RAG (Retrieval-Augmented Generation) combina un motor de búsqueda semántica con un modelo de lenguaje: primero recupera los documentos más relevantes y luego el LLM genera una respuesta usando ese contexto.",
-    sources: ["docs/rag-overview.md", "docs/arquitectura.md"],
+      "RAG (Retrieval-Augmented Generation) combina un motor de búsqueda semántica con un modelo de lenguaje: primero recupera los fragmentos más relevantes de la base de conocimiento y luego el LLM genera una respuesta usando únicamente ese contexto, citando de dónde salió cada dato.",
+    sources: ["docs/politica-vacaciones.md", "docs/onboarding.md"],
   },
   {
-    keywords: ["stack", "tecnologias", "tecnologías", "con que se hizo"],
+    keywords: ["stack", "tecnologias", "tecnologías", "con que se hizo", "ollama", "api key", "keys"],
     answer:
-      "Este asistente está construido con React y Node.js en el frontend/orquestación, Angular en el portal de agencias, y modelos de Cohere/OpenAI para la generación de respuestas.",
+      "El proyecto real corre 100% en local con Ollama: un modelo dedicado genera los embeddings y otro genera las respuestas, sin depender de OpenAI, Cohere ni ninguna API de pago. Backend en Node.js/Express y frontend en React.",
     sources: ["docs/stack-tecnico.md"],
   },
   {
-    keywords: ["websockets", "tiempo real", "reverb", "socket"],
+    keywords: ["vacaciones", "dias", "días"],
     answer:
-      "La comunicación en tiempo real se resuelve con Laravel Reverb y Redis para pub/sub, permitiendo mensajería instantánea entre canales de Telegram/WhatsApp y el panel web.",
-    sources: ["docs/websockets.md", "docs/infraestructura.md"],
+      "Según la base de conocimiento indexada: 15 días hábiles de vacaciones al año, con 6 días proporcionales antes de cumplir el año, solicitando con 10 días de anticipación.",
+    sources: ["docs/politica-vacaciones.md"],
   },
   {
-    keywords: ["oauth", "autenticacion", "autenticación", "seguridad"],
+    keywords: ["soporte", "ticket", "ti", "falla"],
     answer:
-      "El acceso se protege con OAuth 2.0 y JWT, con registro automático de bots y webhooks firmados para validar el origen de cada integración.",
-    sources: ["docs/seguridad.md"],
+      "Los tickets marcados como 'crítico' se atienden en un máximo de 2 horas hábiles; el resto, en un máximo de 24 horas.",
+    sources: ["docs/soporte-ti.md"],
+  },
+  {
+    keywords: ["fuentes", "similitud", "embeddings", "vector"],
+    answer:
+      "Cada respuesta viene acompañada de las fuentes recuperadas por similitud coseno: el documento de origen, el fragmento exacto y el porcentaje de similitud con la pregunta.",
+    sources: ["docs/arquitectura.md"],
   },
 ];
 
 const defaultAnswer = {
   answer:
-    "No tengo una fuente indexada para esa pregunta en esta demo, pero en un sistema RAG real, este mensaje activaría una nueva búsqueda semántica sobre la base vectorial.",
+    "No tengo una fuente indexada para esa pregunta en esta demo, pero el proyecto real reconoce explícitamente cuando la base de conocimiento no tiene la respuesta, en vez de inventarla.",
   sources: [],
 };
 
