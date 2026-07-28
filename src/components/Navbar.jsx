@@ -21,7 +21,8 @@ const Navbar = () => {
   return (
     <nav className="bg-slate-900/90 backdrop-blur-md text-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold tracking-tight">
+        <h1 className="flex items-center gap-2 text-xl font-bold tracking-tight">
+          <img src="/logo-jsm.webp" alt="Logo JSM" className="h-8 w-8 object-contain" />
           Jesús Solís <span className="text-orange-400">Martínez</span>
         </h1>
 
