@@ -10,6 +10,23 @@ const roles = [
   "Arquitecto de soluciones web",
 ];
 
+const stats = [
+  { value: "8+", label: "Años de experiencia" },
+  { value: "6", label: "Proyectos reales" },
+  { value: "5", label: "Empresas / clientes" },
+  { value: "live", label: "Asistente IA en vivo" },
+];
+
+const statsContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12, delayChildren: 0.2 } },
+};
+
+const statItem = {
+  hidden: { opacity: 0, y: 15 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
+
 const Home = () => {
   const rolActual = useTypewriter(roles);
 
@@ -52,6 +69,33 @@ const Home = () => {
         <p className="mt-2 text-lg text-slate-500 dark:text-slate-400">
           Más de 8 años de experiencia creando soluciones web modernas y escalables, con especialización reciente en asistentes de IA conversacional.
         </p>
+
+        <motion.div
+          className="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-8"
+          variants={statsContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          {stats.map(({ value, label }) => (
+            <motion.div key={label} variants={statItem} className="text-center min-w-[90px]">
+              {value === "live" ? (
+                <span className="flex items-center justify-center gap-1.5 text-lg font-bold text-orange-500">
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500" />
+                  </span>
+                  En vivo
+                </span>
+              ) : (
+                <span className="text-2xl sm:text-3xl font-bold text-blue-600 dark:text-blue-400">
+                  {value}
+                </span>
+              )}
+              <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">{label}</p>
+            </motion.div>
+          ))}
+        </motion.div>
 
         <div className="flex flex-wrap justify-center gap-2 mt-6">
           {stack.map((item) => (
