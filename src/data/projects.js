@@ -46,6 +46,15 @@ const projects = [
     repo: "https://github.com/Jesus1508/Laravel_Reverb",
     demo: "chat",
   },
+  {
+    id: 6,
+    title: "Panel Administrativo Institucional",
+    description:
+      "Portal institucional con páginas dinámicas, noticias y recursos descargables, inspirado en los sitios institucionales que desarrollé en CONABIO con Angular, PHP y MySQL. Backend con Node.js, Express y MySQL; frontend con Angular. Prueba la demo publicando/despublicando contenido.",
+    tech: ["Angular", "Node.js", "Express", "MySQL", "Tailwind", "JWT"],
+    repo: "https://github.com/Jesus1508/panel_administrativo",
+    demo: "cms",
+  },
 ];
 
 export default projects;
