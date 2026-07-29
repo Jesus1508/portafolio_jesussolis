@@ -53,7 +53,7 @@ const Skills = () => {
                       key={i}
                       className="flex items-center gap-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm px-3 py-1 rounded-full hover:bg-blue-100 dark:hover:bg-slate-600 transition-colors"
                   >
-                      {Icon && <span className="text-blue-400 dark:text-blue-300"><Icon /></span>}
+                      {Icon && <span aria-hidden="true" className="text-blue-400 dark:text-blue-300"><Icon /></span>}
                       {skill.name}
                   </span>
                 );
