@@ -143,77 +143,77 @@ const knowledgeBase = [
     id: "perfil-por-que-contratarlo",
     documento: "perfil/por-que-contratarlo",
     fragmento:
-      "Lo que distingue a Jesús de otros perfiles similares es que no se limita a escribir código: tiene amplia experiencia resolviendo problemas de negocio de principio a fin. Empezó especializándose en frontend y backend por separado, y con los años evolucionó a un rol Fullstack real, llevando integraciones completas desde cero hasta el despliegue en producción. Procura siempre entregar trabajo mantenible, documentado y preparado para poder expandirse o migrarse a futuro, no soluciones desechables.",
+      "Jesús lo resume así: \"Lo que me diferencia de otros candidatos es que no solamente me dedico a escribir código, sino que tengo amplia experiencia resolviendo problemas de negocio. Me desempeñé como frontend y backend por separado en mis primeros años, y con el tiempo evolucioné a Fullstack real, haciendo integraciones completas desde cero hasta el despliegue. Procuro siempre entregar trabajos mantenibles, aptos para poder expandirse o migrarse a futuro.\"",
     tags: ["por que contratarlo", "diferenciador", "valor agregado", "fortaleza principal", "contratar", "por que elegirlo"],
   },
   {
     id: "perfil-fortalezas-debilidades",
     documento: "perfil/fortalezas-y-debilidades",
     fragmento:
-      "Entre sus principales fortalezas, Jesús destaca: su capacidad para entender y depurar sistemas complejos gracias al paso por distintos cargos y empresas, proponiendo soluciones de fondo y no solo parches; una alta adaptabilidad para aprender tecnologías nuevas o heredadas y ponerse productivo con ellas en poco tiempo; y su gusto por trabajar en equipos con comunicación clara, código mantenible y revisión de código como práctica constante. Como área de oportunidad, reconoce abiertamente que su inglés conversacional es su punto más débil: lee documentación técnica y se comunica bien por escrito, pero la conversación fluida en inglés es algo en lo que sigue trabajando.",
+      "En sus propias palabras: \"Por los diversos trabajos y cargos que he tenido, he podido entender sistemas complejos de fondo: depurar errores, proponer soluciones reales y no solo parches. Soy muy adaptable, aprendo tecnologías nuevas o heredadas y me vuelvo productivo con ellas rápido. Y me gusta trabajar en equipos con comunicación clara, código mantenible y revisión de código constante. Mi debilidad más real es el inglés conversacional: entiendo documentación técnica y me comunico bien por escrito, pero la conversación fluida todavía es algo en lo que estoy trabajando.\"",
     tags: ["fortalezas", "debilidades", "ingles", "adaptabilidad", "trabajo en equipo", "revision de codigo", "areas de oportunidad"],
   },
   {
     id: "perfil-reto-profesional",
     documento: "perfil/reto-profesional-destacado",
     fragmento:
-      "Uno de los retos más grandes que ha enfrentado fue el desarrollo de un sistema de campañas automatizadas por SMS con IA, una tecnología relativamente nueva y compleja que además requiere APIs de pago para un uso serio. El principal desafío fue coordinar correctamente el flujo de mensajes para evitar respuestas duplicadas o entregas cruzadas entre usuarios, además de elegir bien las tecnologías para integrar todo el sistema. Lo resolvió con un análisis completo del flujo, control de estados, validaciones, telemetría y mecanismos anti-duplicidad, documentando todo para futuras mejoras o resolución de bugs. El resultado fue un flujo mucho más estable, con una tasa de errores considerablemente menor y mejor experiencia para los usuarios finales de las campañas.",
+      "Jesús lo cuenta así: \"Me tocó desarrollar un sistema de campañas automatizadas por SMS con IA, una tecnología relativamente nueva, y para un uso serio se necesitan APIs de pago. El reto principal fue coordinar bien el flujo de mensajes para evitar respuestas duplicadas o cruzadas entre usuarios, además de elegir bien las tecnologías para integrar todo. Lo resolvimos con un análisis completo del flujo, control de estados, validaciones, telemetría y mecanismos anti-duplicidad, documentando todo para el futuro. El resultado fue un flujo mucho más estable, con muchos menos errores.\"",
     tags: ["reto", "desafio", "problema resuelto", "sms", "campañas automatizadas", "automatizacion", "logro profesional"],
   },
   {
     id: "perfil-modalidad-disponibilidad",
     documento: "perfil/modalidad-y-disponibilidad",
     fragmento:
-      "Jesús busca actualmente trabajar remoto, en modalidad 100% remota, ya que considera que le permite rendir mejor. Su disponibilidad es tanto para proyectos freelance como para una posición de tiempo completo. En caso de ser contratado, su tiempo de incorporación estimado es de una a dos semanas.",
+      "Él mismo lo dice: \"Busco trabajar remoto, con eso puedo rendir mejor. Estoy abierto tanto a freelance como a tiempo completo, y si me contratan puedo incorporarme en una a dos semanas.\"",
     tags: ["remoto", "trabajo remoto", "modalidad", "freelance", "tiempo completo", "disponibilidad", "incorporacion", "cuando puede empezar"],
   },
   {
     id: "perfil-expectativa-salarial",
     documento: "perfil/expectativa-salarial",
     fragmento:
-      "Sobre su expectativa salarial, Jesús maneja como referencia un rango cercano a los 1,200 USD mensuales, aunque queda abierto a conversarlo según el alcance, la duración y las condiciones específicas de cada proyecto o posición.",
+      "Preguntado directamente, responde: \"Mi rango salarial de referencia es de 1,200 USD mensuales, aunque estoy abierto a conversarlo según el alcance y las condiciones del proyecto.\"",
     tags: ["salario", "sueldo", "expectativa salarial", "pretension salarial", "compensacion", "cuanto cobra", "tarifa"],
   },
   {
     id: "perfil-organizacion-actualizacion",
     documento: "perfil/organizacion-y-actualizacion",
     fragmento:
-      "Para manejar varios proyectos o tareas con fechas límite ajustadas, Jesús prioriza y divide el trabajo en partes más pequeñas para resolverlas de forma más eficiente, cuidando el tiempo asignado a cada tarea. En cuanto a mantenerse actualizado, combina cursos, lectura y documentación técnica con investigación por su cuenta, y le gusta poner en práctica tecnologías nuevas en proyectos personales antes de aplicarlas en el trabajo.",
+      "Jesús explica su método: \"Para manejar varios proyectos con fechas ajustadas, priorizo y divido el trabajo en partes más pequeñas, cuidando el tiempo que le dedico a cada tarea. Para mantenerme actualizado combino cursos, lectura e investigación por mi cuenta, y me gusta poner en práctica tecnologías nuevas en proyectos personales antes de usarlas en el trabajo.\"",
     tags: ["organizacion", "prioridades", "deadlines", "capacitacion", "actualizacion", "cursos", "aprendizaje continuo"],
   },
   {
     id: "perfil-liderazgo-proyeccion",
     documento: "perfil/liderazgo-y-proyeccion",
     fragmento:
-      "Aunque no ha ocupado un puesto formal de liderazgo, Jesús ya ha liderado equipos de manera informal en varios de sus proyectos. Ve esto como su siguiente paso natural: formalizar un rol de liderazgo técnico y, a mediano plazo, le gustaría estar liderando uno o varios equipos de desarrollo.",
+      "Sobre esto comenta: \"Ya he liderado equipos de forma informal en varios proyectos. Mi siguiente paso sería formalizar ese rol, me encantaría estar liderando uno o varios equipos lo antes posible.\"",
     tags: ["liderazgo", "lider de equipo", "team lead", "proyeccion profesional", "futuro profesional", "carrera"],
   },
   {
     id: "perfil-logro-mas-orgulloso",
     documento: "perfil/logro-mas-orgulloso",
     fragmento:
-      "El logro del que Jesús se siente más orgulloso es el sistema de gestión que desarrolló para escuelas de Taekwondo. No es un proyecto de práctica: es un sistema real que usan escuelas de verdad para administrar alumnos, instructores, asistencias, graduaciones y pagos en varias sucursales, con un dashboard de estadísticas. Lo que más lo llena es verlo funcionando con datos reales, resolviendo un problema operativo de principio a fin, además de ser un proyecto reciente que construyó con tecnologías nuevas para él.",
+      "Jesús responde sin dudar: \"El logro del que más orgulloso me siento es el sistema de gestión que desarrollé para escuelas de Taekwondo. No es un proyecto de práctica: es un sistema real que usan escuelas de verdad, para administrar alumnos, instructores, asistencias, graduaciones y pagos en varias sucursales, con un dashboard de estadísticas. Es el que más me llena porque es reciente y lo hice con tecnologías nuevas para mí.\"",
     tags: ["logro", "orgulloso", "taekwondo", "proyecto real", "produccion", "dashboard", "mayor logro"],
   },
   {
     id: "perfil-fullstack-varias-empresas",
     documento: "perfil/por-que-fullstack-en-varias-empresas",
     fragmento:
-      "Jesús prefiere trabajar como Fullstack en distintas empresas porque eso lo expone constantemente a problemas y stacks diferentes de punta a punta, en vez de quedarse resolviendo un solo tipo de problema. Antes tuvo su propia empresa de desarrollo, así que está acostumbrado a manejar varios proyectos a la vez y a adaptarse rápido. Aun así, está abierto a un puesto fijo de tiempo completo si el proyecto y el equipo valen la pena.",
+      "Lo explica así: \"Prefiero trabajar como Fullstack en distintas empresas porque me expone constantemente a problemas y stacks distintos de punta a punta, en vez de quedarme resolviendo un solo tipo de problema. Ya tuve mi propia empresa de desarrollo antes, así que estoy acostumbrado a manejar varios proyectos a la vez y adaptarme rápido. Aun así, estoy abierto a un puesto fijo de tiempo completo si el proyecto y el equipo valen la pena.\"",
     tags: ["freelance", "fullstack", "por que freelance", "varias empresas", "empleo fijo", "adaptabilidad"],
   },
   {
     id: "perfil-que-proyectos-motivan",
     documento: "perfil/que-proyectos-lo-motivan",
     fragmento:
-      "A Jesús lo motivan los proyectos donde tiene que aprender algo que todavía no domina del todo. Por eso ha armado proyectos completos específicamente para cubrir huecos que sentía en su experiencia, como un chat en tiempo real con Laravel Reverb y Redis, o un panel administrativo con Angular y MySQL, no porque un cliente se lo pidiera, sino para tener esa experiencia real antes de que se la pidieran en una entrevista.",
+      "Jesús lo pone así: \"Me motivan los proyectos donde tengo que aprender algo que todavía no domino del todo. Por eso he armado proyectos completos específicamente para cubrir huecos que sentía en mi experiencia, un chat en tiempo real con Laravel Reverb y Redis, un panel administrativo con Angular y MySQL, no porque un cliente me lo pidiera, sino para tener esa experiencia real antes de que me la pidieran en una entrevista.\"",
     tags: ["motivacion", "aprendizaje", "proyectos personales", "reverb", "angular", "cubrir huecos", "que le apasiona"],
   },
   {
     id: "perfil-manejo-desacuerdos",
     documento: "perfil/manejo-de-desacuerdos-tecnicos",
     fragmento:
-      "Cuando hay un desacuerdo técnico en el equipo, Jesús prefiere llevar la conversación a algo concreto: pros y contras, impacto en mantenibilidad, y si aplica, una prueba rápida, en vez de discutir solo en teoría. Al final le importa más que el equipo quede alineado y el código sea mantenible, antes que tener él la razón.",
+      "Su enfoque, en sus palabras: \"Cuando hay un desacuerdo técnico, prefiero llevar la conversación a algo concreto: pros y contras, impacto en mantenibilidad, y si aplica, una prueba rápida, antes que discutir solo en teoría. Al final me importa más que el equipo quede alineado y el código sea mantenible, que tener yo la razón.\"",
     tags: ["conflicto", "desacuerdo tecnico", "trabajo en equipo", "code review", "mantenibilidad", "manejo de conflictos"],
   },
   {
